@@ -2,6 +2,16 @@
 @{ ViewData["Title"] = "Campañas"; }
 
 <h2>Listado de Campañas</h2>
+<form method="get">
+    <select name="categoria"><option value="">-- Categoría --</option>
+        @foreach(var cat in ViewBag.Categorias){ <option>@cat</option> }
+    </select>
+    <select name="estado"><option value="">-- Estado --</option>
+        @foreach(var est in ViewBag.Estados){ <option>@est</option> }
+    </select>
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+<br/>
 <table class="table table-bordered">
     <thead>
         <tr>

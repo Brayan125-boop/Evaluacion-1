@@ -10,7 +10,10 @@ namespace Evaluacion1.Controllers
 
         public IActionResult Index()
         {
-            var campanas = _service.ObtenerTodas();
+            // MODIFICACIÓN para filtro (esto generará conflicto luego)
+            ViewBag.Categorias = new List<string> { "Electro","Hogar","Moda","Tecnología" };
+            ViewBag.Estados = new List<string> { "Vigente","Próxima","Finalizada" };
+            var campanas = _service.Filtrar(categoria, estado);
             return View(campanas);
         }
 
