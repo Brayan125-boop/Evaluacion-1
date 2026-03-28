@@ -1,0 +1,12 @@
+@{ ViewData["Title"] = "Resumen"; }
+<h2>Resumen de Campañas</h2>
+<ul>
+    <li>Total: @ViewBag.Total</li>
+    <li>Vigentes: @ViewBag.Vigentes</li>
+    <li>Próximas: @ViewBag.Proximas</li>
+    <li>Promedio descuento: @ViewBag.PromedioDescuento%</li>
+</ul>
+<h4>Por Canal:</h4>
+@foreach(var item in ViewBag.PorCanal){
+    <p>@item.Canal: @item.Cantidad</p>
+}
