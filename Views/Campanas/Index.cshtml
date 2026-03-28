@@ -1,0 +1,35 @@
+@model List<Evaluacion1.Models.Campana>
+@{ ViewData["Title"] = "Campañas"; }
+
+<h2>Listado de Campañas</h2>
+<form method="get">
+    <select name="categoria"><option value="">-- Categoría --</option>
+        @foreach(var cat in ViewBag.Categorias){ <option>@cat</option> }
+    </select>
+    <select name="estado"><option value="">-- Estado --</option>
+        @foreach(var est in ViewBag.Estados){ <option>@est</option> }
+    </select>
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+<br/>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre</th><th>Categoría</th><th>Estado</th>
+            <th>Canal</th><th>Descuento</th><th>Fechas</th><th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var c in Model) {
+        <tr>
+            <td>@c.Nombre</td>
+            <td>@c.Categoria</td>
+            <td>@c.Estado</td>
+            <td>@c.Canal</td>
+            <td>@c.DescuentoPct%</td>
+            <td>@c.FechaInicio.ToString("dd/MM/yyyy") - @c.FechaFin.ToString("dd/MM/yyyy")</td>
+            <td><a href="/Campanas/Detalle/@c.Id" class="btn btn-sm btn-primary">Ver detalle</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
