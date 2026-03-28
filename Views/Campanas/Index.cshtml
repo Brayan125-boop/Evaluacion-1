@@ -1,33 +1,62 @@
 @model List<Evaluacion1.Models.Campana>
 @{ ViewData["Title"] = "Campañas"; }
 
-<h2>Listado de Campañas</h2>
-<form method="get">
-    <select name="categoria"><option value="">-- Categoría --</option>
-        @foreach(var cat in ViewBag.Categorias){ <option>@cat</option> }
-    </select>
-    <select name="estado"><option value="">-- Estado --</option>
-        @foreach(var est in ViewBag.Estados){ <option>@est</option> }
-    </select>
-    <button type="submit" class="btn btn-primary">Filtrar</button>
+<h2 class="mb-4">📋 Listado de Campañas</h2>
+
+<form method="get" class="row g-3 mb-4">
+    <div class="col-auto">
+        <select name="categoria" class="form-select">
+            <option value="">-- Todas las Categorías --</option>
+            @foreach(var cat in ViewBag.Categorias){
+                <option>@cat</option>
+            }
+        </select>
+    </div>
+    <div class="col-auto">
+        <select name="estado" class="form-select">
+            <option value="">-- Todos los Estados --</option>
+            @foreach(var est in ViewBag.Estados){
+                <option>@est</option>
+            }
+        </select>
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+        <a href="/Campanas" class="btn btn-outline-secondary ms-2">Limpiar</a>
+    </div>
 </form>
-<br/>
-<table class="table table-bordered">
-    <thead>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
         <tr>
-            <th>Nombre</th><th>Categoría</th><th>Estado</th>
-            <th>Canal</th><th>Descuento</th><th>Fechas</th><th></th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Estado</th>
+            <th>Canal</th>
+            <th>Descuento</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach(var c in Model) {
+        @foreach(var c in Model){
         <tr>
             <td>@c.Nombre</td>
             <td>@c.Categoria</td>
-            <td>@c.Estado</td>
+            <td>
+                @if(c.Estado == "Vigente"){
+                    <span class="badge bg-success">@c.Estado</span>
+                } else if(c.Estado == "Próxima"){
+                    <span class="badge bg-warning text-dark">@c.Estado</span>
+                } else {
+                    <span class="badge bg-secondary">@c.Estado</span>
+                }
+            </td>
             <td>@c.Canal</td>
             <td>@c.DescuentoPct%</td>
-            <td>@c.FechaInicio.ToString("dd/MM/yyyy") - @c.FechaFin.ToString("dd/MM/yyyy")</td>
+            <td>@c.FechaInicio.ToString("dd/MM/yyyy")</td>
+            <td>@c.FechaFin.ToString("dd/MM/yyyy")</td>
             <td><a href="/Campanas/Detalle/@c.Id" class="btn btn-sm btn-primary">Ver detalle</a></td>
         </tr>
         }
