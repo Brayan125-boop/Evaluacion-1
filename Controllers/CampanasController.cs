@@ -8,7 +8,7 @@ namespace Evaluacion1.Controllers
         private readonly CampanaService _service;
         public CampanasController(CampanaService service) { _service = service; }
 
-        public IActionResult Index()
+        public IActionResult Index(string categoria, string estado)
         {
             // MODIFICACIÓN para filtro (esto generará conflicto luego)
             ViewBag.Categorias = new List<string> { "Electro","Hogar","Moda","Tecnología" };
