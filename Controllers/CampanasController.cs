@@ -23,5 +23,18 @@ namespace Evaluacion1.Controllers
             if (campana == null) return NotFound();
             return View(campana);
         }
+        
+        public IActionResult Resumen()
+        {
+            // MODIFICACIÓN al controlador (generará conflicto)
+            var campanas = _service.ObtenerTodas();
+            ViewBag.Total = campanas.Count;
+            ViewBag.Vigentes = campanas.Count(c => c.Estado == "Vigente");
+            ViewBag.Proximas = campanas.Count(c => c.Estado == "Próxima");
+            ViewBag.PromedioDescuento = campanas.Average(c => c.DescuentoPct).ToString("F1");
+            ViewBag.PorCanal = campanas.GroupBy(c => c.Canal)
+                .Select(g => new { Canal = g.Key, Cantidad = g.Count() }).ToList();
+            return View();
+        }
     }
 }
