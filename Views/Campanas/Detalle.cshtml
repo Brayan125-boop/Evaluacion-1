@@ -1,0 +1,11 @@
+@model Evaluacion1.Models.Campana
+@{ ViewData["Title"] = "Detalle"; }
+<h2>@Model.Nombre</h2>
+<p><strong>Categoría:</strong> @Model.Categoria</p>
+<p><strong>Estado:</strong> @Model.Estado</p>
+<p><strong>Inicio:</strong> @Model.FechaInicio.ToString("dd/MM/yyyy")</p>
+<p><strong>Fin:</strong> @Model.FechaFin.ToString("dd/MM/yyyy")</p>
+<p><strong>Canal:</strong> @Model.Canal</p>
+<p><strong>Descuento:</strong> @Model.DescuentoPct%</p>
+<p><strong>Descripción:</strong> @Model.Descripcion</p>
+<a href="/Campanas" class="btn btn-secondary">Volver</a>
