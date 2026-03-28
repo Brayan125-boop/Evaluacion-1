@@ -1,12 +1,55 @@
 @{ ViewData["Title"] = "Resumen"; }
-<h2>Resumen de Campañas</h2>
-<ul>
-    <li>Total: @ViewBag.Total</li>
-    <li>Vigentes: @ViewBag.Vigentes</li>
-    <li>Próximas: @ViewBag.Proximas</li>
-    <li>Promedio descuento: @ViewBag.PromedioDescuento%</li>
-</ul>
+
+<h2 class="mb-4">📊 Resumen de Campañas</h2>
+
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-dark text-center shadow-sm">
+            <div class="card-body">
+                <h1>@ViewBag.Total</h1>
+                <p class="mb-0">Total Campañas</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success text-center shadow-sm">
+            <div class="card-body">
+                <h1>@ViewBag.Vigentes</h1>
+                <p class="mb-0">Vigentes</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-dark bg-warning text-center shadow-sm">
+            <div class="card-body">
+                <h1>@ViewBag.Proximas</h1>
+                <p class="mb-0">Próximas</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-primary text-center shadow-sm">
+            <div class="card-body">
+                <h1>@ViewBag.PromedioDescuento%</h1>
+                <p class="mb-0">Promedio Descuento</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h4>Por Canal:</h4>
-@foreach(var item in ViewBag.PorCanal){
-    <p>@item.Canal: @item.Cantidad</p>
-}
+<table class="table table-bordered" style="max-width: 400px;">
+    <thead class="table-dark">
+        <tr><th>Canal</th><th>Cantidad</th></tr>
+    </thead>
+    <tbody>
+        @foreach(var item in ViewBag.PorCanal){
+        <tr>
+            <td>@item.Canal</td>
+            <td>@item.Cantidad</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Campanas" class="btn btn-secondary mt-2">← Volver al listado</a>

@@ -1,0 +1,32 @@
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.AssemblyInfoInputs.cache
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.AssemblyInfo.cs
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.RazorAssemblyInfo.cache
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.RazorAssemblyInfo.cs
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.sourcelink.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\appsettings.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\global.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\EC 1 - BRAYAN DIAZ.staticwebassets.runtime.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\EC 1 - BRAYAN DIAZ.exe
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\EC 1 - BRAYAN DIAZ.deps.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\EC 1 - BRAYAN DIAZ.runtimeconfig.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\EC 1 - BRAYAN DIAZ.dll
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\bin\Debug\net8.0\EC 1 - BRAYAN DIAZ.pdb
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets\msbuild.EC 1 - BRAYAN DIAZ.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets\msbuild.build.EC 1 - BRAYAN DIAZ.props
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EC 1 - BRAYAN DIAZ.props
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EC 1 - BRAYAN DIAZ.props
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\scopedcss\bundle\EC 1 - BRAYAN DIAZ.styles.css
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\scopedcss\projectbundle\EC 1 - BRAYAN DIAZ.bundle.scp.css
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.dll
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\refint\EC 1 - BRAYAN DIAZ.dll
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.pdb
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\EC 1 - BRAYAN DIAZ.genruntimeconfig.cache
+C:\Users\Carlos\Downloads\EC 1 - BRAYAN DIAZ\obj\Debug\net8.0\ref\EC 1 - BRAYAN DIAZ.dll

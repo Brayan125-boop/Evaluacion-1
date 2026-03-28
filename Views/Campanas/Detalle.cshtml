@@ -1,11 +1,34 @@
 @model Evaluacion1.Models.Campana
 @{ ViewData["Title"] = "Detalle"; }
-<h2>@Model.Nombre</h2>
-<p><strong>Categoría:</strong> @Model.Categoria</p>
-<p><strong>Estado:</strong> @Model.Estado</p>
-<p><strong>Inicio:</strong> @Model.FechaInicio.ToString("dd/MM/yyyy")</p>
-<p><strong>Fin:</strong> @Model.FechaFin.ToString("dd/MM/yyyy")</p>
-<p><strong>Canal:</strong> @Model.Canal</p>
-<p><strong>Descuento:</strong> @Model.DescuentoPct%</p>
-<p><strong>Descripción:</strong> @Model.Descripcion</p>
-<a href="/Campanas" class="btn btn-secondary">Volver</a>
+
+<h2 class="mb-4">📌 Detalle de Campaña</h2>
+
+<div class="card shadow-sm" style="max-width: 600px;">
+    <div class="card-header bg-dark text-white">
+        <h5 class="mb-0">@Model.Nombre</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-borderless mb-0">
+            <tr><th>Categoría</th><td>@Model.Categoria</td></tr>
+            <tr><th>Estado</th>
+                <td>
+                    @if(Model.Estado == "Vigente"){
+                        <span class="badge bg-success">@Model.Estado</span>
+                    } else if(Model.Estado == "Próxima"){
+                        <span class="badge bg-warning text-dark">@Model.Estado</span>
+                    } else {
+                        <span class="badge bg-secondary">@Model.Estado</span>
+                    }
+                </td>
+            </tr>
+            <tr><th>Fecha Inicio</th><td>@Model.FechaInicio.ToString("dd/MM/yyyy")</td></tr>
+            <tr><th>Fecha Fin</th><td>@Model.FechaFin.ToString("dd/MM/yyyy")</td></tr>
+            <tr><th>Canal</th><td>@Model.Canal</td></tr>
+            <tr><th>Descuento</th><td>@Model.DescuentoPct%</td></tr>
+            <tr><th>Descripción</th><td>@Model.Descripcion</td></tr>
+        </table>
+    </div>
+    <div class="card-footer">
+        <a href="/Campanas" class="btn btn-secondary">← Volver al listado</a>
+    </div>
+</div>
